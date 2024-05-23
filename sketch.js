@@ -1,25 +1,21 @@
+let radius = 10;
+
 function setup() {
   createCanvas(1707, 940);
   background(51);
-  frameRate(60);
-}
-
-function draw() {
-
-}
-
-function mouseDragged(){
-  if (mouseButton === LEFT){
-    fill(255);
-    noStroke();
-    circle(mouseX, mouseY, 15);
-  }
 }
 
 function mousePressed() {
-  if (mouseButton === CENTER) {
-    background(51);
-  }
-  return false;
+    radius = 5;
 }
+
+function draw() {
+  background(51)
+  fill(255);
+  noStroke();
+  radius = radius + 5;
+  circle(windowWidth / 2, windowHeight / 2, radius);
+  
+}
+
 
