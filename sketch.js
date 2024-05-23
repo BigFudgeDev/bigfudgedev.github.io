@@ -1,9 +1,25 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1707, 940);
+  background(51);
+  frameRate(60);
 }
 
 function draw() {
-  background(51);
-  rect(50, 35, 75, 25);
-  
+
 }
+
+function mouseDragged(){
+  if (mouseButton === LEFT){
+    fill(255);
+    noStroke();
+    circle(mouseX, mouseY, 15);
+  }
+}
+
+function mousePressed() {
+  if (mouseButton === CENTER) {
+    background(51);
+  }
+  return false;
+}
+
