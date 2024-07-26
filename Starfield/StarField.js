@@ -3,7 +3,7 @@ let maxRadius;
 let stars = [];
 
 function setup() {
-  createCanvas(1707, 940);
+  createCanvas(windowWidth, windowHeight);
   
   for (let i = 0; i < 2500; i++){
     stars[i] = new Star();
@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  translate(windowWidth/2, windowHeight/2);
+  translate(width/2, height/2);
   background(0);
   for (let i = 0; i < stars.length; i++){
     stars[i].update();
