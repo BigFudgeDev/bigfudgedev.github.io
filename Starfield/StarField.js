@@ -1,6 +1,7 @@
 let radius;
 let maxRadius;
 let stars = [];
+let Warping = false
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -17,4 +18,12 @@ function draw() {
     stars[i].update();
     stars[i].show();
   }
+}
+
+function mousePressed(){
+  Warping = true;
+}
+
+function mouseReleased(){
+  Warping = false;
 }
