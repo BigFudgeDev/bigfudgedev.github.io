@@ -2,13 +2,16 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #242526;
+  overflow: hidden;
 }
+
 #ShitterDiv {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
 }
+
 canvas {
   display: block;
 }
